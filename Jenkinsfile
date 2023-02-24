@@ -5,6 +5,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "yarn"
+                sh "gatsby clean"
                 sh "gatsby build"
             }
         }
