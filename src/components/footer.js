@@ -39,7 +39,7 @@ const Footer = ({title}) => {
             <EnlaceHome
                     to='/'
             > <h1>
-                    Hotel Gatsby
+                    Hotel Gatsby UDEMY
             </h1>
             </EnlaceHome>  
             
