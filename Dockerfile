@@ -8,4 +8,4 @@ RUN yarn
 
 RUN yarn build
 
-COPY --from=build /app/public
+COPY --from=build /app/public .
