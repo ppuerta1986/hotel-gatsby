@@ -6,6 +6,8 @@ COPY . .
 
 RUN yarn
 
-RUN yarn build
+RUN gatsby clean
 
-COPY --from=build /app/public
+RUN gatsby build
+
+COPY --from=build /app/public .
