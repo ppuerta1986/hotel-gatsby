@@ -10,4 +10,4 @@ RUN gatsby clean
 
 RUN gatsby build
 
-COPY --from=build /app/public .
+CMD gatsby start
