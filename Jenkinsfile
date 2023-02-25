@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage("Build") {
             steps {
+                sh "sudo rm -rf node_modules"
                 sh "yarn"
                 sh "gatsby clean"
                 sh "gatsby build"
