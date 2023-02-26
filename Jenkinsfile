@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Crear .env") {
             steps {
-                sh "sudo touch .env.production"
+                sh "sudo cat >> .env.production"
                 sh "echo 'NAME=${NAME}' >> .env.production"
                 sh "echo 'LASTNAME=${LASTNAME}' >> .env.production"
             }
