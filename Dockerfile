@@ -6,8 +6,16 @@ COPY . .
 
 RUN yarn
 
-RUN gatsby clean
+RUN yarn add gatsby-cli
 
-RUN gatsby build
+RUN yarn build
 
-CMD gatsby start
+FROM nginx:1.18-alpine AS deploy
+
+WORKDIR /usr/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY --from=build /app/public .
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
