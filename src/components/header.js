@@ -34,7 +34,7 @@ const Header = () => {
             <EnlaceHome
                     to='/'
             > <h1>
-                    Hotel Gatsby - UDEMY
+                    Hotel Gatsby - PIPELINE
             </h1>
             </EnlaceHome>  
             <Navegacion />

@@ -39,7 +39,7 @@ const Footer = ({title}) => {
             <EnlaceHome
                     to='/'
             > <h1>
-                    Hotel Gatsby UDEMY
+                    Hotel Gatsby - PIPELINE
             </h1>
             </EnlaceHome>  
             
@@ -54,7 +54,7 @@ const Footer = ({title}) => {
                 padding:1rem            
                 `}
         >
-        {title} - Todos los derechos reseverdos &copy; {year}
+        {title} - Todos los derechos reservados &copy; {year}
         </p>
         </>
      );
