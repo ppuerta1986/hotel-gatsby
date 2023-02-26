@@ -34,7 +34,7 @@ const Header = () => {
             <EnlaceHome
                     to='/'
             > <h1>
-                    Hotel Gatsby - PIPELINE
+                    Hotel Gatsby - PIPELINE | {process.env.NAME} {process.env.LASTNAME}
             </h1>
             </EnlaceHome>  
             <Navegacion />
