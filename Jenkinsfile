@@ -11,7 +11,7 @@ pipeline {
         }
         stage("Docker Build") {
             steps {
-                sh "docker build -t ${JOB_NAME} --build-arg ."
+                sh "docker build -t ${JOB_NAME} ."
                 sh "docker run --name ${JOB_NAME} -d -p 8000:80 ${JOB_NAME}"
                 sh "docker cp ${JOB_NAME}:/usr/share/nginx/html /tmp/${JOB_NAME}"
             }
