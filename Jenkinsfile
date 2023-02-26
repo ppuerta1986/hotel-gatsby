@@ -1,14 +1,10 @@
 pipeline {
     agent any
-    tools {nodejs "NODEJS-18-0-0"}
+    environment {
+        NAME = ${NAME}
+        LASTNAME = ${LASTNAME}
+    }
     stages {
-        stage("Crear .env") {
-            steps {
-                sh "sudo cat >> .env.production"
-                sh "echo 'NAME=${NAME}' >> .env.production"
-                sh "echo 'LASTNAME=${LASTNAME}' >> .env.production"
-            }
-        }
         stage("Docker Build") {
             steps {
                 sh "docker build -t ${JOB_NAME} ."
