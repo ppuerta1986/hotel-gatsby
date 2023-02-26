@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    environment {
-        NAME = ${NAME}
-        LASTNAME = ${LASTNAME}
-    }
     stages {
         stage("Docker Build") {
             steps {
