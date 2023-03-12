@@ -39,7 +39,7 @@ const Footer = ({title}) => {
             <EnlaceHome
                     to='/'
             > <h1>
-                    Hotel Gatsby - PIPELINE | {process.env.NAME} {process.env.LASTNAME}
+                    Hotel Gatsby - PIPELINE AND DOCKER | {process.env.NAME} {process.env.LASTNAME}
             </h1>
             </EnlaceHome>  
             
